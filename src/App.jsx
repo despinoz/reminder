@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 import { config } from "./firebase.config";
+import TextField from "@material-ui/core/TextField";
+import Button from "@material-ui/core/Button";
+import Typography from "@material-ui/core/Typography";
 
 const firebase = require("firebase");
 
@@ -60,9 +63,11 @@ class App extends Component {
 
   render() {
     return (
-      <div>
-        <h1>Reminder</h1>
-        <input
+      <div style={{ textAlign: "center" }}>
+        <Typography variant="h1" gutterBottom>
+          Reminder
+        </Typography>
+        <TextField
           id="txtEmail"
           type="email"
           placeholder="Email"
@@ -70,7 +75,7 @@ class App extends Component {
           value={this.state.email}
         />
         <br />
-        <input
+        <TextField
           id="txtPassword"
           type="password"
           placeholder="Password"
@@ -78,15 +83,15 @@ class App extends Component {
           value={this.state.password}
         />
         <br />
-        <button id="btnLogin" onClick={this.logIn}>
+        <Button id="btnLogin" onClick={this.logIn}>
           Log in
-        </button>
-        <button id="btnSingUp" onClick={this.singUp}>
+        </Button>
+        <Button id="btnSingUp" onClick={this.singUp}>
           Sing up
-        </button>
-        <button id="btnLogout" onClick={this.logOut}>
+        </Button>
+        <Button id="btnLogout" onClick={this.logOut}>
           Log out
-        </button>
+        </Button>
       </div>
     );
   }
