@@ -1,4 +1,5 @@
 # Reminder
+
 <!-- This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
@@ -558,9 +559,9 @@ class Button extends Component {
 
 No clashes from other `.error` class names
 
-```html
+```html -->
 <!-- This button has red background but not red text -->
-<button class="Button_error_ax7yz"></div>
+<!-- <button class="Button_error_ax7yz"></div>
 ```
 
 **This is an optional feature.** Regular `<link>` stylesheets and CSS files are fully supported. CSS Modules are turned on for files ending with the `.module.css` extension.
