@@ -4,7 +4,7 @@ import { Link, withRouter } from "react-router-dom";
 import { auth } from "../firebase";
 import * as routes from "../constants/routes";
 
-const SignUpPage = ({ history }) =>
+const SignUpPage = ({ history }) => (
   <div>
     <h1>SignUp</h1>
     <SignUpForm history={history} />
@@ -32,9 +32,7 @@ class SignUpForm extends Component {
   onSubmit = event => {
     const { username, email, passwordOne } = this.state;
 
-    const {
-      history,
-    } = this.props;
+    const { history } = this.props;
 
     auth
       .doCreateUserWithEmailAndPassword(email, passwordOne)
