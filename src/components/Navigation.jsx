@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import AuthUserContext from "./AuthUserContext";
+import SignOutButton from "./SignOut";
 import * as routes from "../constants/routes";
 
 const Navigation = () => (
@@ -17,6 +19,9 @@ const Navigation = () => (
       </li>
       <li>
         <Link to={routes.ACCOUNT}>Account</Link>
+      </li>
+      <li>
+        <SignOutButton />
       </li>
     </ul>
   </div>
