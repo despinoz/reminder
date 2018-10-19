@@ -7,7 +7,7 @@
 /coverage
 
 # firebase
-firebase.config.js
+firebase.js
 
 # production
 /build
